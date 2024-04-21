@@ -34,9 +34,9 @@ function ContactForm() {
       setError({ ...error, required: false });
     };
 
-    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
+    const serviceID = 'service_0s9w5ui';
+    const templateID = 'template_gki55t7';
+    const options = { publicKey: 'P2DVATZrodx85v8Op' };
 
     try {
       const res = await emailjs.send(serviceID, templateID, input, options);
